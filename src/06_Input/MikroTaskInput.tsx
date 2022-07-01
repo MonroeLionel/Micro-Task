@@ -15,12 +15,11 @@ export function MikroTaskInput() {
         {message: 'message5'}
      ]
    )
-   const battonKlik = (el: string) => {
-      let newMessage = {message: el}
-      console.log(newMessage)
-      setMessage([newMessage, ...message])
-      console.log(el)
+   const battonKlik = () => {
+      add(title)
       setTitle(``)
+      console.log(title)
+
    }
    const add = (el: string) => {
       let newMessage = {message: el}
@@ -33,7 +32,7 @@ export function MikroTaskInput() {
    return (
      <div>
         <Input title={title} callBack={onChangeInput}/>
-        <Button title={title} name={`+`} callBack={battonKlik}/>
+        <Button name={`+`} callBack={battonKlik}/>
         {/*<FullInput add={add}/>*/}
         {message.map((el, index) => {
            return (
