@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {MikroTaskInput} from "./06_Input/MikroTaskInput";
 
 ReactDOM.render(
 
-        <App />
-
+        // <App />
+<MikroTaskInput/>
     ,document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
