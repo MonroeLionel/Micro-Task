@@ -6,6 +6,8 @@ import {Body} from "./site/Body";
 import {Footer} from "./site/Footer";
 import {NewComponent, TopCar} from "./NewComponent";
 import {Button} from "./components/Button";
+import {Sort} from "./components/Sort";
+import {HookTest} from "./components/HookTest";
 
 const students = [
     {id: 1, name: "James", age: 8},
@@ -45,6 +47,7 @@ const button3Foo=()=>{
     console.log(`test button`)
 }
     return (<div>
+            <HookTest/>
             <Header titleForHeader={`new bod`}/>
             <Body titleForBody={`new body`}/>
             <Footer titleForFooter={`new Footer`} />
@@ -54,6 +57,7 @@ const button3Foo=()=>{
             <Button name={`MyYoutubeChanel-1`} callback={()=>button1Foo(`ivan`,12)}/>
             <Button name={`MyYoutubeChanel-2`} callback={()=>button2Foo(`vasan`,22)}/>
             <Button name={`test button`} callback={button3Foo}/>
+            <Sort/>
         </div>
 
     )
